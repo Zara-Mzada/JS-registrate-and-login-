@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="body">
+    <header>
+        <nav>
+            <button id="log-in_btn">Log In</button>
+            <button id="register_btn">Register</button>
+        </nav>
+    </header>
+    <main class="main">
+        <h1>Hello, dear customer</h1>
+        <p>Please, log in your account</p>
+        <p><span>Don't you have account?</span> Create new account</p>
+    </main>
+    <!-- Modal registration -->
+    <div class="modal-register">
+        <form class="modal-register__content" onsubmit="userRegister()">
+            <h2>Registration</h2>
+            <div class="input-container">
+                <label for="username_input">Username</label>
+                <input required autocomplete="off" type="text" id="username-register_input" placeholder="Create a username...">
+            </div>
+            <div class="input-container">
+                <label for="password_input">Password</label>
+                <input required autocomplete="off" type="text" id="password-register_input" placeholder="Create a password...">
+            </div>
+            <div class="input-container input-container-confirm">
+                <label for="confirm-password_input">Confirm password</label>
+                <input required autocomplete="off" type="text" id="confirm-password_input" placeholder="Confirm password...">
+            </div>
+            <button id="modal-register_btn">Register</button>
+            <button id="modal-closeRegister_btn">Close</button>
+        </form>
+    </div>
+
+    <!-- Modal Login -->
+    <div class="modal-login">
+        <form class="modal-login__content" onsubmit="userLogin()">
+            <h2>Log in</h2>
+            <div class="input-container">
+                <label for="username-login_input">Username</label>
+                <input required autocomplete="off" type="text" id="username-login_input" placeholder="Create a username...">
+            </div>
+            <div class="input-container">
+                <label for="password-login_input">Password</label>
+                <input required autocomplete="off" type="text" id="password-login_input" placeholder="Create a password...">
+            </div>
+            <button id="modal-login_btn">Log In</button>
+            <button id="modal-closeLogin_btn">Close</button>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html> 
+

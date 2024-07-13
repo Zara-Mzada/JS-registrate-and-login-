@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: radial-gradient(circle, rgba(247,193,217,1) 0%, rgba(166,200,241,1) 100%);
+}
+nav{
+    width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: flex-end;
+}
+button{
+    width: 150px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#log-in_btn{
+    background-color: rgb(38, 161, 248);
+    margin-right: 50px;
+}
+#register_btn{
+    background-color: rgb(14, 167, 14);
+}
+main{
+    width: 1200px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+    color: rgb(217, 79, 155);
+    margin-bottom: 50px;
+}
+p{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    color: gray;
+}
+span{
+    color: red;
+}
+
+/* ##### Modal Register ##### */
+.modal-register{
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-register__content{
+    position: fixed;
+    top: 200px;
+    left: 460px;
+    z-index: 10;
+    width: 500px;
+    background-color: rgb(163, 240, 255);
+    border-radius: 10px;
+    padding: 30px;
+}
+.modal-register h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: green;
+}
+.input-container{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.input-container label{
+    display: block;
+    font-size: 25px;
+    margin-bottom: 10px;
+    
+}
+
+.input-container input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+#modal-register_btn{
+    background-color: green;
+}
+#modal-closeRegister_btn{
+    background-color: rgb(25, 148, 243);
+}
+
+/* ##### Log in ####### */
+.modal-login{
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-login__content{
+    position: fixed;
+    top: 200px;
+    left: 460px;
+    z-index: 10;
+    width: 500px;
+    background-color: rgb(163, 240, 255);
+    border-radius: 10px;
+    padding: 30px;
+}
+.modal-login h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: green;
+}
+.input-container{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.input-containerlabel{
+    display: block;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.input-container input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+#modal-login_btn{
+    background-color: green;
+}
+#modal-closeLogin_btn{
+    background-color: rgb(25, 148, 243);
+}
+
+
+/* ####################################### Welcome page ################################################## */
+#welcome_h1{
+    margin-top: 100px;
+}
+.products_list{
+    list-style-type: none;
+    width: 1300px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.products_list-item{
+    width: 20%;
+    margin-right: 1px;
+    margin-bottom: 20px;
+}
+.products_list-item img{
+    width: 100%;
+    height: 100%;
+}
